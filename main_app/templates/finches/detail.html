@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<h1>Finch Details</h1>
+
+
+<div class="card">
+    <!-- Add this <a> tag -->
+
+      <div class="card-content">
+        <span class="card-title">{{ finch.name }}</span>
+        <p>Breed: {{ finch.breed }}</p>
+        <p>Description: {{ finch.description|linebreaks }}</p>
+        <p>Age: {{ finch.age }}</p>
+ 
+
+      </div>
+    <!-- Don't forget the </a> closing tag -->
+    </a>
+  </div>
+
+
+{% endblock %}
